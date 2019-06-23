@@ -47,6 +47,10 @@ console.log(sum);
 
 
 console.log('=== Coding Exercise 1 ===');
+/**
+ * Coding Exercise 1: Moving Away from For Loops
+ */
+
 /*
 function handlePosts() {
     const posts = [
@@ -62,6 +66,10 @@ function handlePosts() {
 */
 
 console.log('=== Coding Exercise 2 ===');
+/**
+ * Coding Exercise 2: Processing Values
+ */
+
 /*
 const images = [
   { height: 10, width: 30 },
