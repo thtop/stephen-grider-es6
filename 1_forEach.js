@@ -8,7 +8,7 @@ for (let i = 0; i < colors.length; i++) {
     console.log(colors[i]);
 }
 
-// forEach V1 (Anonymose function)
+// forEach V1 (Anonymous function)
 console.log(` *** forEach 1: ***`);
 colors.forEach(function(color) {
     console.log(color);
