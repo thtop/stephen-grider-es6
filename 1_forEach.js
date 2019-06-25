@@ -27,10 +27,11 @@ colors.forEach(color => console.log(color));
 
 console.log('=== Array V1 ===');
 // Create an array of numbers
-var numbers = [ 1, 2, 3, 4, 5];
+var numbers = [ 1, 2, 3, 4, 5 ];
 // Create a veriable to hold the sum
 var sum = 0;
 // Loop over the array, incrementing the sum variable
+                // Interator function (Anonymous function)
 numbers.forEach(function(number) {
     sum += number;
 });
@@ -40,10 +41,11 @@ console.log(`sum 1: ${sum}`);
 
 console.log('=== Array V2 ===');
 // Create an array of numbers
-var numbers = [ 1, 2, 3, 4, 5];
+var numbers = [ 1, 2, 3, 4, 5 ];
 // Create a veriable to hold the sum
 var sum = 0;
 
+// Interator function (separate function)
 function adder(number) {
     sum += number;
 }
