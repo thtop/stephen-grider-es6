@@ -8,19 +8,19 @@ for (let i = 0; i < colors.length; i++) {
     console.log(colors[i]);
 }
 
-// forEach V1
+// forEach V1 (Anonymose function)
 console.log(` *** forEach 1: ***`);
 colors.forEach(function(color) {
     console.log(color);
 });
 
-// forEach V2
+// forEach V2 (Arrow Function V1)
 console.log(` *** forEach 2: ***`);
 colors.forEach(color => {
     console.log(color);
 });
 
-// forEach V3
+// forEach V3 (Arrow Function V2)
 console.log(` *** forEach 3: ***`);
 colors.forEach(color => console.log(color));
 
