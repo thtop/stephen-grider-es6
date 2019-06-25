@@ -3,19 +3,27 @@ console.log('=== Section 2: The forEach Helper ===');
 const colors = [ 'red', 'bule', 'green'];
 
 // for loop
+console.log(` *** For loop 1: ***`);
 for (let i = 0; i < colors.length; i++) {
     console.log(colors[i]);
 }
 
 // forEach V1
+console.log(` *** forEach 1: ***`);
 colors.forEach(function(color) {
     console.log(color);
 });
 
 // forEach V2
+console.log(` *** forEach 2: ***`);
 colors.forEach(color => {
     console.log(color);
 });
+
+// forEach V3
+console.log(` *** forEach 3: ***`);
+colors.forEach(color => console.log(color));
+
 
 console.log('=== Array V1 ===');
 // Create an array of numbers
@@ -27,7 +35,7 @@ numbers.forEach(function(number) {
     sum += number;
 });
 // Print the sum variable
-console.log(sum);
+console.log(`sum 1: ${sum}`);
 
 
 console.log('=== Array V2 ===');
@@ -43,10 +51,9 @@ function adder(number) {
 // Loop over the array, incrementing the sum variable
 numbers.forEach(adder);
 // Print the sum variable
-console.log(sum);
+console.log(`sum 2: ${sum}`);
 
 
-console.log('=== Coding Exercise 1 ===');
 /**
  * Coding Exercise 1: Moving Away from For Loops
  */
@@ -65,7 +72,7 @@ function handlePosts() {
 }
 */
 
-console.log('=== Coding Exercise 2 ===');
+
 /**
  * Coding Exercise 2: Processing Values
  */
