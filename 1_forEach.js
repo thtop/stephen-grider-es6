@@ -54,10 +54,9 @@ numbers.forEach(adder);
 console.log(`sum 2: ${sum}`);
 
 
-/**
- * Coding Exercise 1: Moving Away from For Loops
- */
 
+
+// *** Coding Exercise 1: Moving Away from For Loops
 /*
 function handlePosts() {
     const posts = [
@@ -73,10 +72,7 @@ function handlePosts() {
 */
 
 
-/**
- * Coding Exercise 2: Processing Values
- */
-
+// *** Coding Exercise 2: Processing Values
 /*
 const images = [
   { height: 10, width: 30 },
