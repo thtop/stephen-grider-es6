@@ -70,3 +70,43 @@ console.log('PostV1: ', postForComment1(posts, comment));
 // V2
 const postForComment2 = (posts, comment) => posts.find(post => post.id === comment.postId);
 console.log('PostV2: ', postForComment2(posts, comment));
+
+/**
+ * Exercise 1: Finding Admin Users
+ */
+const usersEx = [
+    { id: 1, admin: false },
+    { id: 2, admin: false },
+    { id: 3, admin: true }
+  ];
+  
+const admin = usersEx.find(user => user.admin);
+console.log('admin: ', admin);
+
+/**
+ * Exercise 2: What's Your Balance?
+ */
+const accounts = [
+    { balance: -10 },
+    { balance: 12 },
+    { balance: 0 }
+  ];
+  
+const account = accounts.find(acc => acc.balance === 12);
+console.log('account: ', account);
+
+/**
+ * Exercise 3: Customer findWhere Helper
+ */
+const paints = [
+    {height: '10'},
+    {height: '15'},
+    {height: '20'}
+];
+
+const paint =  {height: '10'};
+
+const findWhere = (array, criteria) => {
+    return array.find(arr => arr.height === criteria ['height']);
+}
+console.log('findWhere: ', findWhere(paints, paint));
