@@ -63,3 +63,27 @@ console.log('product2 V2:', product2V2);
 const product2V3 = products2.filter(product => product.type === 'vegetable' && product.quantity > 0 && product.price < 10
 );
 console.log('product2 V3:', product2V3);
+
+/**
+ * Filter relationships
+ */
+const post = { id: 4, title: 'New Post' };
+const comments = [
+    { postId: 4, comment: 'awesome post' },
+    { postId: 3, comment: 'it was ok' },
+    { postId: 4, comment: 'neat' }
+];
+
+// V1
+function commentsForPost(post, comments) {
+    return comments.filter(function(comment) {
+        return comment.postId === post.id;
+    })
+}
+console.log('Comments for post V1: ', commentsForPost(post, comments));
+
+// V2
+const commentsForPost2 = (post, comments) => {
+    return comments.filter(comment => comment.postId === post.id );
+}
+console.log('Comments for post V2: ', commentsForPost(post, comments));
