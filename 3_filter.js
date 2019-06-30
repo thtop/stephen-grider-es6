@@ -87,3 +87,39 @@ const commentsForPost2 = (post, comments) => {
     return comments.filter(comment => comment.postId === post.id );
 }
 console.log('Comments for post V2: ', commentsForPost(post, comments));
+
+/**
+ * Exercise 1: Filtering Value
+ */
+const numbers = [15, 25, 35, 45, 55, 65, 75, 85, 95];
+
+const filteredNumbers = numbers.filter(number => number > 50);
+console.log('Exercise 1: ', filteredNumbers);
+
+/**
+ * Exercise 2: Handling Permissions with Filter
+ */
+const users = [
+    { id: 1, admin: true },  
+    { id: 2, admin: false },
+    { id: 3, admin: false },
+    { id: 4, admin: false },
+    { id: 5, admin: true },
+   ];
+   
+const filteredUsers = users.filter(user => user.admin);
+console.log('Exercise 2: ', filteredUsers);
+
+/**
+ * Exercise 3: Challenging! Implementing 'reject'.
+ */
+
+ // V1
+// function reject(array, iteratorFunction) {
+//     return array.filter(arr => !iteratorFunction(arr))
+// }
+
+// V2
+// const reject2 = (array, iteratorFunction) => {
+//     return array.filter(arr => !iteratorFunction(arr))
+// }
