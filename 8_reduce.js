@@ -37,3 +37,23 @@ const color2 = primaryColors.reduce((previous, primaryColor) => {
     return previous;
 }, []);
 console.log('color2: ', color2);
+
+/**
+ * Item 22. Ace Your Next Interview with Reduce
+ */
+
+// "()()()()"
+// "(((())))"
+// "))))"
+// "()))))"
+// ")("
+// ")()("
+function balancedParens(string) {
+    return !string.split("").reduce((previous, char) => {
+        if (previous < 0) { return previous };
+        if (char === "(") { return ++previous }
+        if (char === ")") { return --previous }
+        return previous;
+    }, 0);
+}
+console.log('Balanced: ', balancedParens(")("));
