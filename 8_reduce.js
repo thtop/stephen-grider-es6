@@ -15,3 +15,25 @@ console.log('sum2: ', sum2);
 // reduce V2
 const sum3 = numbers.reduce((sum, number) => sum + number, 0);
 console.log('sum3: ', sum3);
+
+// item 21. Touch More of Reduce
+const primaryColors = [
+    { color: 'red' },
+    { color: 'yellow' },
+    { color: 'blue' }
+];
+
+// [ 'red', 'yellow', 'blue']
+// reduce V3
+const color1 = primaryColors.reduce(function(previous, primaryColor) {
+    previous.push(primaryColor.color);
+    return previous;
+}, []);
+console.log('color1: ', color1);
+
+// reduce V4
+const color2 = primaryColors.reduce((previous, primaryColor) => {
+    previous.push(primaryColor.color);
+    return previous;
+}, []);
+console.log('color2: ', color2);
