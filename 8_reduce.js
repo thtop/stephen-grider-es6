@@ -82,3 +82,17 @@ const deskTypes = desks.reduce((acc, desk) => {
     return acc
 }, { sitting: 0, standing: 0 });
 console.log('Exercise 2: ', deskTypes);
+
+/**
+ * Exercise: 3 Hardmode: Custom 'Unique' Helper
+ */
+const numbers2 = [1,1,2,3,4,4];
+const unique = numbers2 => numbers2.reduce((acc, currentValue) => {
+
+  if(acc.find(number => number === currentValue))
+    return acc;
+    acc.push(currentValue);
+    return acc;
+},[]);
+
+console.log('Exercise 3: ', unique(numbers2));
