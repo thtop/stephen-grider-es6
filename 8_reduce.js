@@ -65,3 +65,20 @@ const trips = [{ distance: 34 }, { distance: 12 } , { distance: 1 }];
 
 const totalDistance = trips.reduce((sum, trip) => sum += trip.distance, 0)
 console.log('Exercise 1: ', totalDistance);
+
+/**
+ * Exercise 2: Reducing Properties
+ */
+const desks = [
+    { type: 'sitting' },
+    { type: 'standing' },
+    { type: 'sitting' },
+    { type: 'sitting' },
+    { type: 'standing' }
+];
+  
+const deskTypes = desks.reduce((acc, desk) => {
+    desk.type === 'sitting' ? ++acc.sitting : ++acc.standing;
+    return acc
+}, { sitting: 0, standing: 0 });
+console.log('Exercise 2: ', deskTypes);
