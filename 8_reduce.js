@@ -57,3 +57,11 @@ function balancedParens(string) {
     }, 0);
 }
 console.log('Balanced: ', balancedParens(")("));
+
+/**
+ * Exercise 1: Distance Traveld
+ */
+const trips = [{ distance: 34 }, { distance: 12 } , { distance: 1 }];
+
+const totalDistance = trips.reduce((sum, trip) => sum += trip.distance, 0)
+console.log('Exercise 1: ', totalDistance);
